@@ -2,6 +2,12 @@ body{
 	background-color: #0F5A93;
 }
 
-h1,p{
+h1{
+	background-color: #930400;
 	color: white;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+p{
+	color: white
 }
