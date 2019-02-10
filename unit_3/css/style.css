@@ -1,3 +1,50 @@
 body{
-	background: url("gray-white-wallpaper.jpeg");
+	background: url("images/gray-white-wallpaper.jpeg");
+}
+
+h1{
+	text-align: center;
+	font-size:25px;
+	font-family: "Gill Sans MT",sans-serif;
+	text-transform: uppercase;
+}
+
+#slogan{
+	text-align: center;
+	font-style: italic;
+	font-family: "Gill Sans MT",sans-serif;
+}
+
+hr{
+	width: 50px;
+}
+
+h2{
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-family:Calibri, sans-serif;
+}
+
+h3{
+	font-family:Calibri, sans-serif;
+	color: blue;
+}
+
+.jobtitle{
+	font-family:Calibri, sans-serif;
+	color: gray;
+	font-weight:bold;
+}
+
+.dates{
+	font-family:"Calibri Light", sans-serif;
+}
+
+.city{
+	font-family:"Calibri Light", sans-serif;
+	font-style: italic;
+}
+
+ul{
+	font-family:"Calibri Light", sans-serif;
 }
