@@ -4,7 +4,7 @@ body{
 
 h1{
 	text-align: center;
-	font-size:25px;
+	font-size:100px;
 	font-family: "Gill Sans MT",sans-serif;
 	text-transform: uppercase;
 }
@@ -12,17 +12,18 @@ h1{
 #slogan{
 	text-align: center;
 	font-style: italic;
+	font-size:50px;
 	font-family: "Gill Sans MT",sans-serif;
 }
 
 hr{
-	width: 50px;
+	width: 500px;
 }
 
 h2{
 	text-transform: uppercase;
 	text-decoration: underline;
-	font-family:Calibri, sans-serif;
+	font-family:Gill Sans MT, sans-serif;
 }
 
 h3{
@@ -45,6 +46,6 @@ h3{
 	font-style: italic;
 }
 
-ul{
+p,ul{
 	font-family:"Calibri Light", sans-serif;
 }
