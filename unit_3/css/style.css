@@ -1,5 +1,6 @@
 body{
-	background: url(gray-white-wallpaper.jpg);
+	background: url(images/gray-white-wallpaper.jpg);
+	background-size: cover;
 }
 
 h1{
