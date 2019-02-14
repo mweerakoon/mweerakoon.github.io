@@ -1,5 +1,6 @@
 body{
 	background-color: #0F5A93;
+	color: white;
 }
 
 h1{
@@ -27,12 +28,11 @@ h2{
 
 h3{
 	font-family:Calibri, sans-serif;
-	color: white;
+
 }
 
 .jobtitle{
 	font-family:Calibri, sans-serif;
-	color: gray;
 	font-weight:bold;
 }
 
@@ -47,5 +47,4 @@ h3{
 
 p,ul{
 	font-family:"Calibri Light", sans-serif;
-	color: white;
 }
