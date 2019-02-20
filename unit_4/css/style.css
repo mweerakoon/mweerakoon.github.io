@@ -21,10 +21,8 @@ h1,h2,h3,h4,h5,h6{
 header{
 	background: url("../images/redbluegray.jpg");
 	background-size: 100%;
-	/*background-color: #0A2542;*/
 	color: white;
 	padding: 2em;
-	line-height: 3em;
 }
 
 nav{
@@ -92,6 +90,7 @@ ul{
 	font-size:35px;
 	font-style: italic;
 	font-weight: 200;
+	line-height: 1.5em;
 	width: 16em;
 }
 
