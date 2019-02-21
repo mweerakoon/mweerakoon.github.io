@@ -117,7 +117,7 @@ ul{
 	color: #222222;
 }
 
-#employeeicon{
+#employeeicon,#successicon,#laptopicon,#gradcapicon,#mailicon{
 	width: 50%;
 }
 
@@ -125,15 +125,12 @@ ul{
 	background: #558ED5;
 }
 
-#successicon{
-	width: 50%;
-}
 
 .employer{
 	color: #558ED5;
 }
 
-.jobtitle{
+.jobtitle, #degree{
 	font-weight: bold;
 }
 
@@ -145,10 +142,6 @@ ul{
 	background: #C00000;
 }
 
-#laptopicon{
-	width: 50%;
-}
-
 .skilltype{
 	color: #C00000;
 }
@@ -157,14 +150,10 @@ ul{
 	background: #16375E;
 }
 
-#gradcapicon{
-	width: 50%;
+#school{
+	color: #16375E;
 }
 
 #contact{
 	background: #222222;
-}
-
-#mailicon{
-	width: 50%;
 }
