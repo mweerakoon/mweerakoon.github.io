@@ -47,6 +47,8 @@ section{
 nav a{
 	color: lightgray;
 	text-decoration: none;
+	margin-left: 25px;
+	margin-right: 25px;
 }
 
 a{
@@ -74,7 +76,6 @@ p{
 ul{
 	padding:1.5em;
 }
-
 
 .clearfloat:after{
 	content: "";
