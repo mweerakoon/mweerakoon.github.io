@@ -19,15 +19,23 @@ h1,h2,h3,h4,h5,h6{
 }
 
 header{
-	background: url("../images/redbluegray.jpg");
+	/*background: url("../images/redbluegray.jpg");*/
+	background-color: #ffed74;
+	border: 1px black solid;
+    padding: 20px;
+
 	background-size: 100%;
 	color: white;
-	padding: 2em;
+	/*padding: 2em;*/
 }
 
 nav{
 	font-family:"Oswald", sans-serif;
-	background-color: #222222;
+	/*background-color: #222222;*/
+	background-color: #e8c66a;
+	border: 1px black solid;
+    padding: 20px;
+
 	text-transform: uppercase;
 	text-align: center;
 	font-size: .75em;
@@ -38,22 +46,34 @@ nav{
 	position: sticky;
 	top: 0;
 	width: 100%;
+	z-index: 9;
 }
 
-section{
-	/*padding:2em;*/
+div, section{
+	background-color: #ffe2b8;
+	border: 1px black solid;
+    padding: 20px;
 }
 
 nav a{
 	color: lightgray;
+	font-weight: bold;
 	text-decoration: none;
 	margin-left: 25px;
 	margin-right: 25px;
 }
 
+nav a:hover{
+		color: #558ED5;
+}
+
 a{
 	color: #558ED5;
 	text-decoration: none;
+}
+
+a:hover{
+	color: #C00000;
 }
 
 h1{
@@ -100,6 +120,7 @@ ul{
 	width: 50%;
 	float: left;
 	padding:2em;
+	overflow: hidden;
 }
 
 .left{
@@ -111,20 +132,21 @@ ul{
 	justify-content: space-around;
 	align-items: center;
 	color: white;
+	flex-direction: column;
 }
 
-#about{
+#about .left{
 	background: lightgray;
 	color: #222222;
 }
 
 #employeeicon,#successicon,#laptopicon,#gradcapicon,#mailicon{
 	width: 50%;
-	display: block;
+	/*display: block;*/
 	margin: 0 auto;
 }
 
-#experience{
+#experience .left{
 	background: #558ED5;
 }
 
@@ -141,7 +163,7 @@ ul{
 	font-style: italic;
 }
 
-#skills{
+#skills .left{
 	background: #C00000;
 }
 
@@ -149,7 +171,7 @@ ul{
 	color: #C00000;
 }
 
-#education{
+#education .left{
 	background: #16375E;
 }
 
@@ -157,6 +179,6 @@ ul{
 	color: #16375E;
 }
 
-#contact{
+#contact .left{
 	background: #222222;
 }

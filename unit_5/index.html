@@ -5,6 +5,7 @@
 <head>
 	<title>Mullin Weerakoon</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -21,16 +22,16 @@
 		</header>
 
 		<nav>
-			<a href="#">About</a>
-			<a href="#">Experience</a>
-			<a href="#">Skills</a> 
-			<a href="#">Education</a> 
-			<a href="#">Contact</a>
+			<a href="#about">About</a>
+			<a href="#experience">Experience</a>
+			<a href="#skills">Skills</a> 
+			<a href="#education">Education</a> 
+			<a href="#contact">Contact</a>
 		</nav>
 
 		<main>
-			<section class="clearfloat">
-				<div id="about" class="left">
+			<section class="clearfloat" id="about">
+				<div class="left">
 					<img id="employeeicon" src="images/employee.png">
 					<h2>About</h2>
 				</div>
@@ -40,8 +41,8 @@
 				</div>
 			</section>
 
-			<section class="clearfloat">
-				<div id="experience" class="left">
+			<section class="clearfloat" id="experience">
+				<div class="left">
 					<img id="successicon" src="images/success.png">
 					<h2>Experience</h2>
 				</div>
@@ -115,8 +116,8 @@
 				</div>
 			</section>
 
-			<section class="clearfloat">
-				<div id="skills" class="left">
+			<section class="clearfloat" id="skills">
+				<div class="left">
 					<img id="laptopicon" src="images/laptop.png">
 					<h2>Skills</h2>
 				</div>
@@ -149,8 +150,8 @@
 				</div>
 			</section>
 
-			<section class="clearfloat">
-				<div id="education" class="left">
+			<section class="clearfloat" id="education">
+				<div class="left">
 					<img id="gradcapicon" src="images/graduationcap.png">
 					<h2>Education</h2>
 				</div>
@@ -165,8 +166,8 @@
 				</div>
 			</section>
 
-			<section class="clearfloat">
-				<div id="contact" class="left">
+			<section class="clearfloat" id="contact">
+				<div class="left">
 					<img id="mailicon" src="images/mail.png">
 					<h2>Contact</h2>
 				</div>	
@@ -181,5 +182,43 @@
 		</footer>
 
 	</div>
+
+	<script type="text/javascript">
+		$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+	</script>
 </body>
 </html>
