@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Slabo+27px');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Slabo 27px", serif;
+	font-size: 20px;
+	color: #222222;
+	line-height: 1.5em;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family:"Oswald", sans-serif;
+	line-height: 1.5em;
+}
+
+header{
+	background: url("../images/redbluegray.jpg");
+	background-size: 100%;
+	color: white;
+	padding: 2em;
+}
+
+nav{
+	font-family:"Oswald", sans-serif;
+	background-color: #222222;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: .75em;
+	letter-spacing: .25em;
+	font-weight: 300;
+	line-height: 2em;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 9;
+}
+
+nav a{
+	color: lightgray;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+nav a:hover{
+		color: #558ED5;
+}
+
+a{
+	color: #558ED5;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #C00000;
+}
+
+h1{
+	font-size: 5em;
+	font-weight: 900;
+}
+
+h1,h2{
+	text-transform: uppercase;
+}
+
+h2{
+	font-size:3.5em;
+}
+
+p{
+	width: 30em;
+}
+
+ul{
+	padding:1.5em;
+}
+
+.clearfloat:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#slogan{
+	font-size:35px;
+	font-style: italic;
+	font-weight: 200;
+	line-height: 1.5em;
+	width: 16em;
+}
+
+#headshot{
+	width: 15%;
+	float: right;
+}
+
+.left, .right{
+	width: 50%;
+	float: left;
+	padding:2em;
+	overflow: hidden;
+}
+
+.left{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	flex-direction: column;
+}
+
+#about .left{
+	background: lightgray;
+	color: #222222;
+}
+
+#employeeicon,#successicon,#laptopicon,#gradcapicon,#mailicon{
+	width: 50%;
+	/*display: block;*/
+	margin: 0 auto;
+}
+
+#experience .left{
+	background: #558ED5;
+}
+
+
+.employer{
+	color: #558ED5;
+}
+
+.jobtitle, #degree{
+	font-weight: bold;
+}
+
+.city,.dates{
+	font-style: italic;
+}
+
+#skills .left{
+	background: #C00000;
+}
+
+.skilltype{
+	color: #C00000;
+}
+
+#education .left{
+	background: #16375E;
+}
+
+#school{
+	color: #16375E;
+}
+
+#contact .left{
+	background: #222222;
+}
